@@ -16,7 +16,6 @@ map("x", "<leader>d", '"_d')
 map("n", "<leader>d", '"_d')
 map("n", "Q", "<nop>")
 
-
 -- Switching between buffers
 map("n", "<leader>k", function()
   require("nvchad.tabufline").next()
@@ -29,7 +28,6 @@ end, { desc = "buffer goto prev" })
 map("n", "<leader>bc", function()
   require("nvchad.tabufline").close_buffer()
 end, { desc = "buffer close" })
-
 
 -- Live grep
 map("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", { desc = "telescope live grep" })
@@ -49,6 +47,10 @@ map("v", "<Left>", "<Nop>", { noremap = true, silent = true })
 map("v", "<Right>", "<Nop>", { noremap = true, silent = true })
 map("v", "<Up>", "<Nop>", { noremap = true, silent = true })
 
+-- toggle DBUI
+map("n", "<leader>du", "<cmd>DBUIToggle<CR>", { desc = "DBUI toggle window" })
+
+-- File formatting
 map("n", "<leader>fm", function()
   require("conform").format { lsp_fallback = true, async = true }
 end, { desc = "general format file" })
