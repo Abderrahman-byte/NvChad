@@ -6,8 +6,8 @@
 local M = {}
 
 M.base46 = {
-  -- theme = "nightfox",
-  theme = "nightfox",
+  -- theme = "chadracula",
+  theme = "chadracula",
 
   -- hl_override = {
   -- 	Comment = { italic = true },
@@ -15,7 +15,28 @@ M.base46 = {
   -- },
 }
 
--- M.nvdash = { load_on_startup = true }
+M.ui = {
+  telescope = { style = "bordered" }, -- borderless / bordered
+}
+
+M.nvdash = {
+  load_on_startup = true,
+  header = {
+    "   ▄████████         ▄████████  ▄█          ▄████████    ▄████████    ▄████████  ▄█  ",
+    "  ███    ███        ███    ███ ███         ███    ███   ███    ███   ███    ███ ███  ",
+    "  ███    ███        ███    █▀  ███         ███    ███   ███    █▀    ███    ███ ███▌ ",
+    "  ███    ███       ▄███▄▄▄     ███         ███    ███   ███         ▄███▄▄▄▄██▀ ███▌ ",
+    "▀███████████      ▀▀███▀▀▀     ███       ▀███████████ ▀███████████ ▀▀███▀▀▀▀▀   ███▌ ",
+    "  ███    ███        ███    █▄  ███         ███    ███          ███ ▀███████████ ███  ",
+    "  ███    ███        ███    ███ ███▌    ▄   ███    ███    ▄█    ███   ███    ███ ███  ",
+    "  ███    █▀         ██████████ █████▄▄██   ███    █▀   ▄████████▀    ███    ███ █▀   ",
+    "                               ▀                                     ███    ███      ",
+    "                                                                                     ",
+    "          In doing what we ought we deserve no praise because it is our duty         ",
+    "",
+  },
+}
+
 -- M.ui = {
 --       tabufline = {
 --          lazyload = false
