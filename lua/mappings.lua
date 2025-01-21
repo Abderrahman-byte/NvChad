@@ -54,3 +54,9 @@ map("n", "<leader>du", "<cmd>DBUIToggle<CR>", { desc = "DBUI toggle window" })
 map("n", "<leader>fm", function()
   require("conform").format { lsp_fallback = true, async = true }
 end, { desc = "general format file" })
+
+-- toggle terminal
+map({"t", "n"}, "<leader>tt", ":Floaterminal<CR>")
+
+-- esc twice to exit terminal
+map("t", "<esc><esc>", "<c-\\><c-n>")
