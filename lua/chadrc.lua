@@ -17,6 +17,9 @@ M.base46 = {
 
 M.ui = {
   telescope = { style = "bordered" }, -- borderless / bordered
+  tabufline = {
+    lazyload = true,
+  },
 }
 
 M.nvdash = {
@@ -36,11 +39,5 @@ M.nvdash = {
     "",
   },
 }
-
--- M.ui = {
---       tabufline = {
---          lazyload = false
---      }
---}
 
 return M

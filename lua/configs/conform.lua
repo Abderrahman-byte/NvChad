@@ -9,7 +9,7 @@ local options = {
     typescriptreact = { "prettierd", "prettier", stop_after_first = true },
     vue = { "prettierd", "prettier", stop_after_first = true },
     python = { "isort", "black" },
-    go = { "goimports" },
+    go = { "goimports", "gofumpt" },
     sh = { "shfmt" },
   },
 
